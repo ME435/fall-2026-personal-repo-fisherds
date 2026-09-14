@@ -1,0 +1,5 @@
+{
+    "board": "arduino:avr:mega",
+    "port": "/dev/tty.usbmodem2101",
+    "sketch": "ArduinoCode/FakePlateloader/FakePlateloader.ino"
+}
