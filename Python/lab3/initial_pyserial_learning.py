@@ -3,7 +3,7 @@ import time
 
 print("Learning Pyserial")
 
-ser = serial.Serial(port="/dev/ttyACM0", baudrate=19200, timeout=10)
+ser = serial.Serial(port="/dev/cu.usbmodem21201", baudrate=19200, timeout=10)
 
 time.sleep(2.0) # Necessary sometimes. :)
 
