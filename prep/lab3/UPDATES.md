@@ -2,6 +2,7 @@
 
 Things to change in the Day 1 (serial menu) and Day 2 (Flask) Google Docs so they match the tested code in `prep/lab3`. As of 2026-09-24, all of it works on the Pi with the FakePlateloader Arduino.
 
+
 ## Folder layout
 
 ```
