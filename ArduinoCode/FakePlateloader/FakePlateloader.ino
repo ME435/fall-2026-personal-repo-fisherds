@@ -65,13 +65,13 @@ void handleXAxis(String params) {
 
 void handleMove(String params) {
   params.trim();
-  int commaIndex = params.indexOf(',');
-  if (commaIndex == -1) {
+  int spaceIndex = params.indexOf(' ');
+  if (spaceIndex == -1) {
     Serial.print("Unknown command --> ");
     Serial.println(inputString);
     return;
   }
-  String loadParam = params.substring(commaIndex + 1);
+  String loadParam = params.substring(spaceIndex + 1);
   loadParam.trim();
   int loadPosition = loadParam.toInt();
 
@@ -94,17 +94,17 @@ void handleLoaderStatus() {
 
 void handleSetDelay(String params) {
   params.trim();
-  int firstComma = params.indexOf(',');
-  int secondComma = params.indexOf(',', firstComma + 1);
-  if (firstComma == -1 || secondComma == -1) {
+  int firstSpace = params.indexOf(' ');
+  int secondSpace = params.indexOf(' ', firstSpace + 1);
+  if (firstSpace == -1 || secondSpace == -1) {
     Serial.print("Unknown command --> ");
     Serial.println(inputString);
     return;
   }
 
-  String fromParam = params.substring(0, firstComma);
-  String toParam = params.substring(firstComma + 1, secondComma);
-  String delayParam = params.substring(secondComma + 1);
+  String fromParam = params.substring(0, firstSpace);
+  String toParam = params.substring(firstSpace + 1, secondSpace);
+  String delayParam = params.substring(secondSpace + 1);
   fromParam.trim();
   toParam.trim();
   delayParam.trim();
