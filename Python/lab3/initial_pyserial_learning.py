@@ -6,8 +6,7 @@ print("Learning Pyserial")
 # ser = serial.Serial(port="/dev/cu.usbmodem21201", baudrate=19200, timeout=10)
 ser = serial.Serial(port="/dev/ttyACM0", baudrate=19200, timeout=10)
 
-# time.sleep(2.0)
-time.sleep(1)
+time.sleep(2.0)
 
 ser.reset_input_buffer()
 message = "RESET"
