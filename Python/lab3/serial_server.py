@@ -22,4 +22,8 @@ def handle_plateloader_commands(command):
 if __name__ == "__main__":
     print("Running flask!")
     loader.connect()
-    app.run(host="0.0.0.0", port=8080, use_reloader=False) # , use_reloader=False
+    try:
+        app.run(host="0.0.0.0", port=8080, use_reloader=False)
+    finally:
+        print("Disconnecting plate loader")
+        loader.disconnect()
