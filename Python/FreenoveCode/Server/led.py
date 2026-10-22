@@ -1,7 +1,7 @@
 # -*-coding: utf-8 -*-
 import time
 from parameter import ParameterManager
-from rpi_ledpixel import Freenove_RPI_WS281X
+# from rpi_ledpixel import Freenove_RPI_WS281X
 from spi_ledpixel import Freenove_SPI_LedPixel
 
 class Led:
