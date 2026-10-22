@@ -70,7 +70,7 @@ def run_test_go_stop(robot: Rosebot):
         #   Then call the  stop  method of the   drive_system   of the robot.
         # -------------------------------------------------------------------------
         robot.drive_system.go(left_wheel_speed, right_wheel_speed)
-        time.sleep(2)
+        time.sleep(1)
         robot.drive_system.stop()
 
 
