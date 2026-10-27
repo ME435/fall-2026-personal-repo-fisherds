@@ -49,7 +49,7 @@ class MqttClient(object):
     # self.client.connect(mqtt_broker_ip_address, 1883, 60)
     self.client.loop_start()
 
-  def send_message(self, type_name, payload=None):
+  def send_message(self, type_name: str, payload=None):
     message_dict = {"type": type_name}
     if payload is not None:
       message_dict["payload"] = payload
